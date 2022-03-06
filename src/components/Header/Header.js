@@ -1,23 +1,23 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
+import './Header.css'
 const Header = () => {
     return (
-        <div>
-            <NavLink activeStyle={{
+        <div className="navBar">
+            <NavLink className="nav" activeStyle={{
                 fontWeight: "bold",
                 color: "red"
             }} to="/home">Home</NavLink>
-            <NavLink activeStyle={{
+            <NavLink className="nav" activeStyle={{
                 fontWeight: "bold",
                 color: "red"
             }} to="/friends">Friends</NavLink>
-            <NavLink activeStyle={{
+            <NavLink className="nav" activeStyle={{
                 fontWeight: "bold",
                 color: "red"
             }} to="/about">About</NavLink>
-            <NavLink activeStyle={{
+            <NavLink className="nav" activeStyle={{
                 fontWeight: "bold",
                 color: "red"
             }} to="/about/culture">Culture</NavLink>
